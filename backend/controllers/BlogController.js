@@ -46,7 +46,7 @@ export const updateBlog = async(req, res) => {
             "message" : "¡Registro actualizado correctamente!"
         })
     } catch (error) {
-        rest.json({message: error.message})
+        res.json({message: error.message})
     }
 }
 
