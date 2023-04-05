@@ -18,7 +18,7 @@ export const getBlog = async (req, res) => {
         const blog = await BlogModel.findAll({
             where: {id: req.params.id}
         })
-        res.json(blog)
+        res.json(blog[0])
     } catch (error) {
         rest.json({message: error.message})
     }
