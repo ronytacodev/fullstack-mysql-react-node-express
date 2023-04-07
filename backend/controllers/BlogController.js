@@ -3,12 +3,12 @@ import BlogModel from "../models/BlogModel.js";
 //** Métodos para el CRUD  **//
 
 // Mostrar todos los registros
-export const getAllBlogs = async (req, rest) => {
+export const getAllBlogs = async (req, res) => {
     try {
         const blogs = await BlogModel.findAll()
-        rest.json(blogs)
+        res.json(blogs)
     } catch (error) {
-        rest.json({message: error.message})
+        res.json({message: error.message})
     }
 }
 
@@ -20,7 +20,7 @@ export const getBlog = async (req, res) => {
         })
         res.json(blog[0])
     } catch (error) {
-        rest.json({message: error.message})
+        res.json({message: error.message})
     }
 }
 
@@ -32,7 +32,7 @@ export const createBlog = async (req, res) => {
             "message" : "¡Registro creado correctamente!"
         })
     } catch (error) {
-        rest.json({message: error.message})
+        res.json({message: error.message})
     }
 }
 
@@ -60,6 +60,6 @@ export const deleteBlog = async( req, res) => {
             "message" : "¡Registro eliminado correctamente!"
         })
     } catch (error) {
-        rest.json({message: error.message})
+        res.json({message: error.message})
     }
 }

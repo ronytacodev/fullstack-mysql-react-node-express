@@ -3,13 +3,14 @@ import cors from 'cors'
 // importamos la conexión a la DB
 import db from "./database/db.js"
 // importamos nuestro enrutador
-import blogRoutes from './routes/routes.js'
+// import blogRoutes from "./routes/routes.js"
+import blogRoutes from "./routes/routes.js"
 
 const app = express()
 
 app.use( cors() )
 app.use( express.json())
-app.use('/blogs', blogRoutes)
+app.use("/blogs", blogRoutes)
 
 try {
     await db.authenticate()

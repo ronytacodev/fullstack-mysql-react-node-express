@@ -1,0 +1,14 @@
+###
+GET http://localhost:8000/blogs/
+
+###
+GET http://localhost:8000/blogs/2
+
+### 
+POST http://localhost:8000/blogs/
+Content-Type: application/json
+
+{
+    "title": "titulo prueba",
+    "content": "content de prueba"
+}
