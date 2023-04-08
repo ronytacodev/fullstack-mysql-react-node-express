@@ -14,8 +14,13 @@ Code to create API REST and testing with REST CLIENT.
 # Commands to Backend with Nodejs + Express + Sequelize
 1. npm init -y 
 2. npm i express cors mysql2 sequelize
-3. npm i nodemon --save-dev
-  * nodemon app
+3. npm i nodemon --save-dev  -->  nodemon app
+
+# Commands to Frontend with React
+
+1. Npx create-react-app frontend  --->   npm start
+2. npm install axios react-router-dom
+
 
 # SCREENSHOT
 
