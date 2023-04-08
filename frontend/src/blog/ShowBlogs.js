@@ -34,7 +34,18 @@ const CompShowBlogs = () => {
                                 <th>Action</th>
                             </tr>
                         </thead>
-                        {/* me quede en el min 09.35 */}
+                        <tbody>
+                            {blogs.map (( blog) => (
+                                <tr key={blog.id}>
+                                    <td>{ blog.title}</td>
+                                    <td>{blog.content}</td>
+                                    <td>
+                                        <Link to={`/edit/${blog.id}`} className='btn btn-info'>Edit</Link>
+                                        <button onClick={()=>deleteBlog(blog.id)} className='btn btn-danger'>Delete</button>
+                                    </td>
+                                </tr>
+                            ))}
+                        </tbody>
                     </table>
                 </div>
             </div>
