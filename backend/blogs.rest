@@ -9,6 +9,18 @@ POST http://localhost:8000/blogs/
 Content-Type: application/json
 
 {
-    "title": "titulo prueba",
+    "title": "titulo de prueba",
     "content": "content de prueba"
 }
+
+###
+PUT http://localhost:8000/blogs/7
+Content-Type: application/json
+
+{
+    "title": "titulo 7",
+    "content": "contenido de mi primer post"
+}
+
+###
+DELETE http://localhost:8000/blogs/7
