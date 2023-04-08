@@ -20,6 +20,7 @@ Code to create API REST and testing with REST CLIENT.
 
 1. Npx create-react-app frontend  --->   npm start
 2. npm install axios react-router-dom
+3. npm i bootstrap
 
 
 # SCREENSHOT
