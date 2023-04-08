@@ -10,6 +10,9 @@ Code to create API REST and testing with REST CLIENT.
 * NPM 
 * Nodemon
 * React
+* Axios
+* Bootstrap
+* Font Awesome
 
 # Commands to Backend with Nodejs + Express + Sequelize
 1. npm init -y 

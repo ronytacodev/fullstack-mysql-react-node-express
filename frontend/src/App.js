@@ -17,6 +17,7 @@ function App() {
         >
           Learn React
         </a>
+        <button className="btn btn-primary">CREAR</button>
       </header>
     </div>
   );
