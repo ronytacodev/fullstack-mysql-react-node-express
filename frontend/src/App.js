@@ -4,6 +4,7 @@ import './App.css';
 // importamos los componentes
 import CompShowBlogs from './blog/ShowBlogs';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import CompCreateBlog from './blog/CreateBlogs';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path='/' element={ <CompShowBlogs/>}/>
+          <Route path='/create' element={ <CompCreateBlog/>}/>
         </Routes>
       </BrowserRouter>
     </div>
