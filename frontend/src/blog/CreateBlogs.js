@@ -12,7 +12,7 @@ const CompCreateBlog = () => {
     // procedimiento guardar
     const store = async (e) => {
         e.preventDefault()
-        axios.post(URI, {title: title, content: content})
+        await axios.post(URI, {title: title, content: content})
         navigate('/') 
     }
 
